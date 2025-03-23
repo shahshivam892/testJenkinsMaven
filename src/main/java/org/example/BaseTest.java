@@ -14,15 +14,17 @@ public class BaseTest {
 
     @BeforeTest
     public void setup(){
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions cop = new ChromeOptions();
-        cop.addArguments("--headless");
-        driver = new ChromeDriver(cop);
+        // WebDriverManager.chromedriver().setup();
+        // ChromeOptions cop = new ChromeOptions();
+        // cop.addArguments("--headless");
+        // driver = new ChromeDriver(cop);
+        System.out.println("In before method");
     }
 
     @AfterTest
     public void tearDown(){
-        driver.quit();
+        // driver.quit();
+        System.out.println("In after method");
     }
 
 }
